@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+}
+
+.statusBar{
+    display: flex;
+    flex-direction: row;
+}
+
+.statusBar >ul{
+    list-style-type: none;
+    
+}
+
+.statusBar >li{
+    justify-content: space-around;
+    flex-basis: 1;
+}
