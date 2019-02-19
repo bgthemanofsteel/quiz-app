@@ -2,17 +2,26 @@
     box-sizing: border-box;
 }
 
-.statusBar{
+.banner{
     display: flex;
-    flex-direction: row;
-}
-
-.statusBar >ul{
-    list-style-type: none;
     
 }
 
-.statusBar >li{
-    justify-content: space-around;
-    flex-basis: 1;
+.logo{
+    flex: 3;
+}
+
+.container{
+    display: flex;
+    list-style-type: none;
+    margin: auto;
+    flex: 1;
+}
+
+
+.container >li{
+    flex: 1;
+    
+    
+    
 }
