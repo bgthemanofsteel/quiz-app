@@ -16,13 +16,38 @@
             <li>Question: <span class="questionNumber">0</span>/10 </li>
             <li class="score">Score: </li>
         </ul>
+        <!-- put a place for notifications here -->
     </header>
     <main role="main">
         <div class="quizStart">
             <h1>Do you know your Superhero Secret Identities?</h1>
             <button class="startButton">Up, Up & Away!</button>
         </div>
-        <div class="questionAnswerForm"></div>
+        <div class="questionAnswerForm">
+            <form>
+                <p>Please select your preferred contact method:</p>
+                <div>
+                  <input type="radio" id="contactChoice1"
+                  name="question" value="email">
+                  <label for="questionChoice1">Email</label>
+              
+                  <input type="radio" id="questionChoice2"
+                   name="question" value="phone">
+                  <label for="questionChoice2">Phone</label>
+              
+                  <input type="radio" id="questionChoice3"
+                   name="question" value="mail">
+                  <label for="questionChoice3">Mail</label>
+
+                  <input type="radio" id="questionChoice4"
+                   name="question" value="mail">
+                  <label for="questionChoice4">Mail</label>
+                </div>
+                <div>
+                  <button type="submit">Submit</button>
+                </div>
+              </form>
+        </div>
 
     </main>
 

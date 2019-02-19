@@ -2,9 +2,18 @@
     box-sizing: border-box;
 }
 
+body{
+    max-width: 800px;
+    margin: auto;
+    background-color: lightgray;
+}
+
+
 .banner{
     display: flex;
-    
+    border: 2px solid black;
+    margin: 5px;
+    padding: 5px;
 }
 
 .logo{
