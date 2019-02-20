@@ -10,13 +10,13 @@
     <script src="./index.js"></script>
 </head>
 <body>
-    <header class="banner">
+    <header>
         <div class="logo">Logo</div>
         <ul class="container">
             <li>Question: <span class="questionNumber">0</span>/10 </li>
             <li class="score">Score: </li>
         </ul>
-        <!-- put a place for notifications here -->
+        <!-- put a place for notifications here  -->
     </header>
     <main role="main">
         <div class="quizStart">
@@ -24,10 +24,9 @@
             <button class="startButton">Up, Up & Away!</button>
         </div>
         <div class="questionAnswerForm">
-            <form>
-                <p>Please select your preferred contact method:</p>
-                <div>
-                  <input type="radio" id="contactChoice1"
+            <form>  
+                <div class="questionChoices">
+                  <input type="radio" id="questionChoice1"
                   name="question" value="email">
                   <label for="questionChoice1">Email</label>
               
@@ -48,7 +47,16 @@
                 </div>
               </form>
         </div>
-
+        <div class="rightAnswer">
+            <p>YOU GOT IT!</p>
+            <img src="https://1000logos.net/wp-content/uploads/2016/10/batman-logo-2000.jpg">
+            <button type="next">Next</button>
+        </div>
+        <div class="winner">
+            <p>GREAT JOB!</p>
+            <img src="https://images.esellerpro.com/2486/I/145/4/u_20260840_Half%20Moon%20Bay_Homewares_Coasters_coaster-superman-logo.JPG">
+            <button type="restart">Restart Quiz</button>
+        </div>
     </main>
 
 
