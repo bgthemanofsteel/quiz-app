@@ -63,7 +63,7 @@ body{
     flex-direction: column;
     text-align: center;
 }
-.questionAnswerForm >h2{
+.questionAnswerForm >legend{
     flex: 1;
     margin: auto;
     padding: 5px;

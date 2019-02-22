@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Superhero Quiz App</title>
     <link rel="stylesheet" type="text/css" href="./main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./index.js"></script>
+    
 </head>
 <body>
     <header>
@@ -24,37 +23,39 @@
             <button class="startButton">Go!</button>
         </div>
         <div class="questionAnswerForm">
-            <h2>Bruce Wayne is which Superhero?</h2>
-            <form>  
-                <div class="questionChoices">
-                  <div class="questionOption">  
-                    <input type="radio" id="questionChoice1"
-                    name="question" value="Spiderman">
-                    <label for="questionChoice1">Spiderman</label>
-                  </div>
-              
-                  <div class="questionOption">  
-                    <input type="radio" id="questionChoice2"
-                    name="question" value="Batman">
-                    <label for="questionChoice2">Batman</label>
-                  </div>
-              
-                  <div class="questionOption">  
-                    <input type="radio" id="questionChoice3"
-                    name="question" value="Aquaman">
-                    <label for="questionChoice3">Aquaman</label>
-                  </div>
+            <fieldset>
+                <legend>Bruce Wayne is which Superhero?</legend>
+                <form>  
+                    <div class="questionChoices">
+                    <div class="questionOption">  
+                        <input type="radio" id="questionChoice1"
+                        name="question" value="Spiderman">
+                        <label for="questionChoice1">Spiderman</label>
+                    </div>
+                
+                    <div class="questionOption">  
+                        <input type="radio" id="questionChoice2"
+                        name="question" value="Batman">
+                        <label for="questionChoice2">Batman</label>
+                    </div>
+                
+                    <div class="questionOption">  
+                        <input type="radio" id="questionChoice3"
+                        name="question" value="Aquaman">
+                        <label for="questionChoice3">Aquaman</label>
+                    </div>
 
-                  <div class="questionOption">  
-                    <input type="radio" id="questionChoice4"
-                    name="question" value="Antman">
-                    <label for="questionChoice4">Antman</label>
-                  </div>
-                </div>
-                <div class="submit">
-                  <button type="submit">Submit</button>
-                </div>
-              </form>
+                    <div class="questionOption">  
+                        <input type="radio" id="questionChoice4"
+                        name="question" value="Antman">
+                        <label for="questionChoice4">Antman</label>
+                    </div>
+                    </div>
+                    <div class="submit">
+                    <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </fieldset> 
         </div>
         <div class="rightAnswer">
             <p>YOU GOT IT!</p>
@@ -68,6 +69,7 @@
         </div>
     </main>
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
