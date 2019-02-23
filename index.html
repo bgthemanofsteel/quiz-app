@@ -13,63 +13,24 @@
         <div class="logo">Logo</div>
         <ul class="container">
             <li>Question: <span class="questionNumber">0</span>/10 </li>
-            <li class="score">Score: </li>
+            <li>Score: <span class="score">0</span></li>
         </ul>
         <!-- put a place for notifications here  -->
     </header>
     <main role="main">
         <div class="quizStart">
             <h1>Name that Superhero</h1>
-            <button class="startButton">Go!</button>
+            <button class="startButton">Start!</button>
         </div>
-        <div class="questionAnswerForm">
-            <fieldset>
-                <legend>Bruce Wayne is which Superhero?</legend>
-                <form>  
-                    <div class="questionChoices">
-                    <div class="questionOption">  
-                        <input type="radio" id="questionChoice1"
-                        name="question" value="Spiderman">
-                        <label for="questionChoice1">Spiderman</label>
-                    </div>
-                
-                    <div class="questionOption">  
-                        <input type="radio" id="questionChoice2"
-                        name="question" value="Batman">
-                        <label for="questionChoice2">Batman</label>
-                    </div>
-                
-                    <div class="questionOption">  
-                        <input type="radio" id="questionChoice3"
-                        name="question" value="Aquaman">
-                        <label for="questionChoice3">Aquaman</label>
-                    </div>
-
-                    <div class="questionOption">  
-                        <input type="radio" id="questionChoice4"
-                        name="question" value="Antman">
-                        <label for="questionChoice4">Antman</label>
-                    </div>
-                    </div>
-                    <div class="submit">
-                    <button type="submit">Submit</button>
-                    </div>
-                </form>
-            </fieldset> 
-        </div>
-        <div class="rightAnswer">
-            <p>YOU GOT IT!</p>
-            <img src="https://1000logos.net/wp-content/uploads/2016/10/batman-logo-2000.jpg">
-            <button type="next">Next</button>
-        </div>
-        <div class="winner">
-            <p>GREAT JOB!</p>
-            <img src="https://images.esellerpro.com/2486/I/145/4/u_20260840_Half%20Moon%20Bay_Homewares_Coasters_coaster-superman-logo.JPG">
-            <button type="restart">Restart Quiz</button>
-        </div>
+        <div class="questionAnswerForm"></div>
+        <div class="rightAnswer"></div>
+        <div class="wrongAnswer"></div>
+        <div class="winner"></div>
+        <div class="loser"></div>
     </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./store.js"></script>
     <script src="./index.js"></script>
 </body>
 </html>

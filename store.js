@@ -1,5 +1,6 @@
 const STORE = [
     {
+        id: 1,
         question: 'Bruce Wayne is which Superhero?',
         choices: [
             'Spiderman',
@@ -12,6 +13,7 @@ const STORE = [
         alt: 'Batman logo'
     },
     {
+        id: 2,
         question: 'Steve Rogers is which Superhero?',
         choices: [
             'Captain America',
@@ -24,6 +26,7 @@ const STORE = [
         alt: 'Captain America logo'
     },
     {
+        id: 3,
         question: "Spiderman's real name is?",
         choices: [
             'Bruce Wayne',
@@ -36,6 +39,7 @@ const STORE = [
         alt: 'Spiderman logo'
     },
     {
+        id: 4,
         question: "Cyclop's real identity is:",
         choices: [
             'Scott Summers',
@@ -48,6 +52,7 @@ const STORE = [
         alt: 'Cyclops logo'
     },
     {
+        id: 5,
         question: 'Oliver Queen is which Superhero?',
         choices: [
             'Green Arrow',
@@ -60,6 +65,7 @@ const STORE = [
         alt: 'Green Arrow logo'
     },
     {
+        id: 6,
         question: "Wolverine's real name is:",
         choices: [
             'Logan',
@@ -72,6 +78,7 @@ const STORE = [
         alt: 'Wolverine logo'
     },
     {
+        id: 7,
         question: "The Flash's real identity is:",
         choices: [
             'Barry Allen',
@@ -84,6 +91,7 @@ const STORE = [
         alt: 'The Flash logo'
     },
     {
+        id: 8,
         question: 'Clark Kent is which Superhero?',
         choices: [
             'Batman',
@@ -96,9 +104,10 @@ const STORE = [
         alt: 'Superman logo'
     },
     {
+        id: 9,
         question: "What is Wonder Woman's real name?",
         choices: [
-            'Natacia Romanov',
+            'Natasha Romanov',
             'Kara Zor-El',
             'Diana Prince',
             'Carol Danvers'
@@ -108,6 +117,7 @@ const STORE = [
         alt: 'Wonder Woman logo'
     },
     {
+        id: 10,
         question: "Captain Marvel's real name is:",
         choices: [
             'Steve Rogers',
