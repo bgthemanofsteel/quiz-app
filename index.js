@@ -5,6 +5,7 @@ let score = 0;
 function startScreen(){
     //when page loads show quizStart
     $('.quizStart').show();
+    $('.questionAnswerForm').hide();
     $('.rightAnswer').hide();
     $('.wrongAnswer').hide();
     $('.winner').hide();
@@ -50,10 +51,11 @@ function renderQuestionAnswerForm(){
             
         </fieldset>
         </div>`;
-    // } else {
-    //     renderResults();
-    //     restartQuiz();
-    //     $('.questionNumber').text(10)
+    } else {
+        handleEndMessage();
+        restartQuiz();
+        $('.questionNumber').text(10)
+        $('.questionAnswerForm').hide();
     }
     
 }
@@ -66,8 +68,8 @@ function handleQuizStart(){
         // console.log(questionNumber);
         //questionNumber++;
         handleQuestionCount(); 
-        $('.quizStart').remove();
-        $('.questionAnswerForm').html(renderQuestionAnswerForm());
+        $('.quizStart').hide();
+        $('.questionAnswerForm').show().html(renderQuestionAnswerForm());
         $('.questionNumber').text(1);
     }
     )};
@@ -155,16 +157,15 @@ function renderNextQuestion(){
 
 
 function handleEndMessage(){
-    if(questionNumber === STORE.length){
-        if(score > 7){
-            $('.winner').html(
-                ` <p>GREAT JOB!</p>
-                <img src="https://images.esellerpro.com/2486/I/145/4/u_20260840_Half%20Moon%20Bay_Homewares_Coasters_coaster-superman-logo.JPG">
-                <div class="restart">
-                    <button type="restart">Restart Quiz</button>
-                </div>`
-            ).show();
-        }
+    // console.log('end message works');
+    if(score >= 8) {
+        $('.winner').html(
+            ` <p>GREAT JOB!</p>
+            <img src="https://images.esellerpro.com/2486/I/145/4/u_20260840_Half%20Moon%20Bay_Homewares_Coasters_coaster-superman-logo.JPG">
+            <div class="restart">
+                <button type="restart">Restart Quiz</button>
+            </div>`
+        ).show();
     } else {
         $('.loser').html(
             ` <p>Try again!</p>
@@ -182,7 +183,20 @@ function beginQuiz(){
     handleQuizStart();
     handleUserSelection();
     renderNextQuestion();
-    handleEndMessage();
+    // handleEndMessage();
+}
+
+function restartQuiz(){
+    $('.winner').on('click', '.restart', function(){
+        questionNumber = 0;
+        score = 0;
+        startScreen();
+    });
+    $('.loser').on('click', '.restart', function(){
+        questionNumber = 0;
+        score = 0;
+        startScreen();
+    });
 }
 
 $(beginQuiz);
