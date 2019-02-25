@@ -43,7 +43,7 @@ function renderQuestionAnswerForm(){
                 <span>${STORE[questionNumber].choices[3]}</span>
                 </label>
                 <div class="submit">
-                    <button type="submit">Submit</button>
+                    <button type="submit"><span>Submit</span></button>
                 </div>
             </div>
             
@@ -115,7 +115,7 @@ function correct(){
         `<p>YOU GOT IT!</p>
         <img src="${STORE[questionNumber].image}" alt="${STORE[questionNumber].alt}">
         <div class="next">
-            <button type="next">Next</button>
+            <button type="next"><span>Next</span></button>
         </div>`).toggle();
     };
 
@@ -126,7 +126,7 @@ function wrong(){
         `<p><b>NOT QUITE.</b><br>The correct answer is <span>${STORE[questionNumber].correctAnswer}</span></p>
         <img src="${STORE[questionNumber].image}" alt="${STORE[questionNumber].alt}">
         <div class="next">
-            <button type="next">Next</button>
+            <button type="next"><span>Next</span></button>
         </div>`).toggle();
 }
 
@@ -163,7 +163,7 @@ function handleEndMessage(){
             ` <p>GREAT JOB!</p>
             <img src="https://images.esellerpro.com/2486/I/145/4/u_20260840_Half%20Moon%20Bay_Homewares_Coasters_coaster-superman-logo.JPG">
             <div class="restart">
-                <button type="restart">Restart Quiz</button>
+                <button type="restart"><span>Restart Quiz</span></button>
             </div>`
         ).show();
     } else {
@@ -171,7 +171,7 @@ function handleEndMessage(){
             ` <p>Try again!</p>
             <img src="https://images.esellerpro.com/2486/I/145/4/u_20260840_Half%20Moon%20Bay_Homewares_Coasters_coaster-superman-logo.JPG">
             <div class="restart">
-                <button type="restart">Restart Quiz</button>
+                <button type="restart"><span>Restart Quiz</span></button>
             </div>`
         ).show();
     }
