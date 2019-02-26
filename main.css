@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: 'poppins';
 }
 
 header{
@@ -11,26 +12,26 @@ header{
 }
 
 .logo{
-    flex: 2;
+    flex: 1;
     padding: 10px;
+}
+.logo >img{
+    border-radius: 50%;
+    /* max-width: 10%; */
 }
 
 .container{
     display: flex;
     list-style-type: none;
-    flex: 1;
+    flex: 2;
     padding: 10px;
     justify-content: space-around;
 }
 
-/*
-.questionNumber{
-    justify-content: space-between;    
+.container >li{
+    flex: 1;
+    font-size: 1.55vw;
 }
-.score{
-    justify-content: space-between;
-}
-*/
 
 body{
     max-width: 800px;
@@ -43,14 +44,14 @@ body{
     display: flex;
     flex-direction: column;
     background-color: royalblue;
-    margin: 30px;
+    margin: 5px 30px 5px 30px;
 }
 .quizStart >h1{
-    font-size: 8vw;
+    font-size: 4vw;
     flex: 1;
 }
 .startButton{
-    padding: 10px;
+    padding: 5px;
     color: white;
     background-color: crimson;
     border: 1px solid crimson;
@@ -63,10 +64,11 @@ fieldset{
 }
 
 .questionAnswerForm{
-    margin: 30px;
+    margin: 0 30px 0 30px;
     display: flex;
     flex-direction: column;
     text-align: center;
+    font-size: 2vw;
 }
 .questionAnswerForm >legend{
     flex: 1;
@@ -91,17 +93,21 @@ fieldset{
 }
 label{
     font-weight: bold;
-    font-size: 3vw;
+    font-size: 2vw;
     margin: 3px;
-    padding: 15px;
+    padding: 10px;
     background-color: crimson;
+    border-radius: 5px;
     /* display: block; */
     flex: 4;
     /* justify-content: space-around; */
 }
-label:hover{
+label:hover {
     color: white;
 }
+/* label:active{
+    color: white;
+} */
 
 .submit, .next{
     display: flex;
@@ -110,11 +116,11 @@ button{
     margin: 10px 5px 10px 5px;
     font-weight: bold;
     flex: 1;
-    padding: 15px;
+    padding: 5px;
     color: white;
     background-color: royalblue;
-    border: 1px solid royalblue;
-    font-size: 3vw;
+    /* border: 1px solid royalblue; */
+    font-size: 2vw;
     border-radius: 5px;
 }
 button span, .submit span, .next span, .restart span{
@@ -124,10 +130,10 @@ button span, .submit span, .next span, .restart span{
 
 button span:after, .submit span:after, .next span:after, .restart span:after {
     content: '\00bb';
-    font-size: 4vw;
+    font-size: 3vw;
     position: relative;
     opacity: 0;
-    top: 0;
+    /* top: 0; */
     right: -5px;
     transition: 0.5s;
 }
@@ -140,6 +146,8 @@ button:hover span:after, .submit:hover span:after, .next:hover span:after, .rest
     opacity: 1;
     /* right: 0; */
 }
+
+
 
 
 .rightAnswer, .wrongAnswer{
@@ -161,7 +169,7 @@ button:hover span:after, .submit:hover span:after, .next:hover span:after, .rest
 }
 
 img{
-    width: 30%;
+    max-width: 40%;
     border-radius: 50%;
     margin: auto;
 }
@@ -169,7 +177,6 @@ img{
 
 .winner, .loser{
     display: flex;
-    border: 1px solid black;
     flex-direction: column;
     margin-bottom: 50px;
 }
@@ -180,9 +187,13 @@ img{
     margin: auto;
 }
 
-/* .winner >button, .loser >button{
-    flex: 1;
-    font-size: 20px;
+.restart{
+    margin: auto;
+    font-size: 2vw;
     margin-top: 10px;
-    padding: 10px;
-} */
+    padding: 5px;
+}
+.restart >button{
+    flex: 1;
+    
+}

@@ -9,7 +9,7 @@ const STORE = [
             'Antman'
             ],
         correctAnswer: 'Batman',
-        image: 'https://1000logos.net/wp-content/uploads/2016/10/batman-logo-2000.jpg',
+        image: 'https://cdn.europosters.eu/image/750/badges/batman-logo-i4495.jpg',
         alt: 'Batman logo'
     },
     {
@@ -35,7 +35,7 @@ const STORE = [
             'Peter Parker'
             ],
         correctAnswer: 'Peter Parker',
-        image: 'https://i.pinimg.com/originals/7f/f7/d9/7ff7d93eaa14a904e3e35013fb7550fd.png',
+        image: 'https://library.kissclipart.com/20180904/pow/kissclipart-spiderman-logo-png-clipart-marvel-s-spider-man-eec584579c309df8.jpg',
         alt: 'Spiderman logo'
     },
     {
@@ -48,7 +48,7 @@ const STORE = [
             'Barry Allen'
             ],
         correctAnswer: 'Scott Summers',
-        image: 'https://i.pinimg.com/originals/80/bb/f6/80bbf63e6ddeba8297c280e13c9bb2eb.jpg',
+        image: 'https://res.cloudinary.com/teepublic/image/private/s---JDTCvpI--/t_Preview/b_rgb:36538b,c_limit,f_jpg,h_630,q_90,w_630/v1446222534/production/designs/183807_1.jpg',
         alt: 'Cyclops logo'
     },
     {
@@ -61,7 +61,7 @@ const STORE = [
             'Captain Marvel'
             ],
         correctAnswer: 'Green Arrow',
-        image: 'https://vignette.wikia.nocookie.net/logopedia/images/6/6e/Arrow_season_5_title_card.png/revision/latest?cb=20171004002943',
+        image: 'https://i.pinimg.com/236x/f1/08/35/f1083541fc3f46e6c79b36bb398a0965--superhero-symbols-green-arrow-symbol.jpg?b=t',
         alt: 'Green Arrow logo'
     },
     {
@@ -113,7 +113,7 @@ const STORE = [
             'Carol Danvers'
             ],
         correctAnswer: 'Diana Prince',
-        image: 'http://assets.suredone.com/1868/media-photos/sd3195-wonder-woman-logo-fridge-magnet-dc-comics-justice-league-comic-book-hero.jpeg',
+        image: 'https://rlv.zcache.com/dc_comics_wonder_woman_logo_happy_birthday_classic_round_sticker-raf7cdabb019b4d3eb4306a60ebd537fb_v9wth_8byvr_540.jpg',
         alt: 'Wonder Woman logo'
     },
     {
