@@ -3,7 +3,7 @@
     font-family: 'poppins';
 }
 
-/* @media only screen and (max-width: 600px) { */
+@media only screen and (max-width: 600px) {
     
     /* Header */
     header{
@@ -85,9 +85,7 @@
         background-color: crimson;
         padding-left: 15px;
     }
-    /* .answerOption >span{
-        margin: auto; 
-    } */
+
     label{
         font-weight: bold;
         font-size: 5vw;
@@ -97,9 +95,6 @@
         border-radius: 5px;
         flex: 4;
     }
-    /* label:hover {
-        color: white;
-    } */
 
     /* Pictures */
     img{
@@ -122,30 +117,10 @@
         font-size: 5vw;
         border-radius: 5px;
     }
-    /* button span{
-        position: relative;
-    }
-    button span:after{
-        content: '\00bb';
-        font-size: 3vw;
-        position: relative;
-        opacity: 0;
-        right: -5px;
-        transition: 0.5s;
-    }
-    button:hover span{
-        padding-right: 35px;
-    }
-    button:hover span:after{
-        opacity: 1;
-    } */
-
-
 
     /* Feedback Messages */
     .rightAnswer, .wrongAnswer{
         display: flex;
-        /* border: 1px solid black; */
         flex-direction: column;
         margin: 30px 30px 50px 30px;
     }
@@ -178,25 +153,25 @@
         margin-top: 10px;
         padding: 5px;
     }
-/* } */
+}
 
 
 @media only screen and (min-width: 600px) {
     
     /* Header */
     header{
-        /* display: flex;
+        display: flex;
         margin: 50px;
-        padding: 5px; */
+        padding: 5px;
         align-items: flex-end;
     }
-    /* .logo{
+    .logo{
         flex: 1;
         padding: 10px;
     }
     .logo >img{
         border-radius: 50%;
-    } */
+    }
     .container{
         display: flex;
         list-style-type: none;
@@ -299,7 +274,6 @@
         border-radius: 5px;
     }
     button span{
-        /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px  0 rgba(0,0,0,0.19); */
         position: relative;
     }
     button span:after{
@@ -307,7 +281,6 @@
         font-size: 3vw;
         position: relative;
         opacity: 0;
-        /* top: 0; */
         right: -5px;
         transition: 0.5s;
     }
@@ -324,7 +297,6 @@
     /* Feedback Messages */
     .rightAnswer, .wrongAnswer{
         display: flex;
-        /* border: 1px solid black; */
         flex-direction: column;
         margin: 30px 30px 50px 30px;
     }
@@ -484,7 +456,6 @@
         font-size: 3vw;
         position: relative;
         opacity: 0;
-        /* top: 0; */
         right: -5px;
         transition: 0.5s;
     }
@@ -493,7 +464,6 @@
     }
     button:hover span:after{
         opacity: 1;
-        /* right: 0; */
     }
 
 
@@ -501,7 +471,6 @@
     /* Feedback Messages */
     .rightAnswer, .wrongAnswer{
         display: flex;
-        /* border: 1px solid black; */
         flex-direction: column;
         margin: 30px 30px 50px 30px;
     }
