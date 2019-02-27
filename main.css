@@ -3,197 +3,361 @@
     font-family: 'poppins';
 }
 
-header{
-    display: flex;
-    /* border: 2px solid black; */
-    margin: 50px;
-    padding: 5px;
-    align-items: center;
-}
-
-.logo{
-    flex: 1;
-    padding: 10px;
-}
-.logo >img{
-    border-radius: 50%;
-    /* max-width: 10%; */
-}
-
-.container{
-    display: flex;
-    list-style-type: none;
-    flex: 2;
-    padding: 10px;
-    justify-content: space-around;
-}
-
-.container >li{
-    flex: 1;
-    font-size: 1.55vw;
-}
-
-body{
-    max-width: 800px;
-    margin: auto;
-    background-color: lightgray;
-}
-
-.quizStart{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    background-color: royalblue;
-    margin: 5px 30px 5px 30px;
-}
-.quizStart >h1{
-    font-size: 4vw;
-    flex: 1;
-}
-.startButton{
-    padding: 5px;
-    color: white;
-    background-color: crimson;
-    border: 1px solid crimson;
-    flex: 1;
-}
-
-fieldset{
-    border: none;
-
-}
-
-.questionAnswerForm{
-    margin: 0 30px 0 30px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 2vw;
-}
-.questionAnswerForm >legend{
-    flex: 1;
-    margin: auto;
-    padding: 5px;
-}
-.questionChoices{
-    display: flex;
-    flex-direction: column;
-    /* margin: 10px; */
-}
-.answerOption{
-    display: flex;
-    background-color: crimson;
-    padding-left: 15px;
-}
-.answerOption >span{
-    margin: auto; 
-    /* padding: 5px; */
-    /* flex: .05    ; */
-    /* justify-content: space-around; */
-}
-label{
-    font-weight: bold;
-    font-size: 2vw;
-    margin: 3px;
-    padding: 10px;
-    background-color: crimson;
-    border-radius: 5px;
-    /* display: block; */
-    flex: 4;
-    /* justify-content: space-around; */
-}
-label:hover {
-    color: white;
-}
-/* label:active{
-    color: white;
-} */
-
-.submit, .next{
-    display: flex;
-}
-button{
-    margin: 10px 5px 10px 5px;
-    font-weight: bold;
-    flex: 1;
-    padding: 5px;
-    color: white;
-    background-color: royalblue;
-    /* border: 1px solid royalblue; */
-    font-size: 2vw;
-    border-radius: 5px;
-}
-button span, .submit span, .next span, .restart span{
-    /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px  0 rgba(0,0,0,0.19); */
-    position: relative;
-}
-
-button span:after, .submit span:after, .next span:after, .restart span:after {
-    content: '\00bb';
-    font-size: 3vw;
-    position: relative;
-    opacity: 0;
-    /* top: 0; */
-    right: -5px;
-    transition: 0.5s;
-}
-
-button:hover span, .submit:hover span, .next:hover span, .restart:hover span{
-    padding-right: 35px;
-}
-
-button:hover span:after, .submit:hover span:after, .next:hover span:after, .restart:hover span:after{
-    opacity: 1;
-    /* right: 0; */
-}
-
-
-
-
-.rightAnswer, .wrongAnswer{
-    display: flex;
-    /* border: 1px solid black; */
-    flex-direction: column;
-    margin: 30px 30px 50px 30px;
-}
-.rightAnswer >p {
-    text-align: center;
-    font-size: 5vw;
-    margin: auto;
-}
-
-.wrongAnswer >p{
-    text-align: center;
-    font-size: 5vw;
-    margin: auto;
-}
-
-img{
-    max-width: 40%;
-    border-radius: 50%;
-    margin: auto;
-}
-
-
-.winner, .loser{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 50px;
-}
-
-.winner >p, .loser >p{
-    text-align: center;
-    font-size: 5vw;
-    margin: auto;
-}
-
-.restart{
-    margin: auto;
-    font-size: 2vw;
-    margin-top: 10px;
-    padding: 5px;
-}
-.restart >button{
-    flex: 1;
+/* @media only screen and (max-width: 600px) { */
     
+    /* Header */
+    header{
+        display: flex;
+        margin: 50px;
+        padding: 5px;
+        align-items: center;
+    }
+    .logo{
+        flex: 2;
+        padding: 10px;
+    }
+    .logo >img{
+        border-radius: 50%;
+        width: 100%
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        flex: 4;
+        padding: 10px;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+    .container >li{
+        font-size: 5vw;
+    }
+
+
+    /* Main Section */
+    body{
+        max-width: 800px;
+        margin: auto;
+        background-color: lightgray;
+    }
+    /* Start Screen */
+    .quizStart{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        background-color: royalblue;
+        margin: 5px 30px 5px 30px;
+    }
+    .quizStart >h1{
+        font-size: 6vw;
+        flex: 1;
+    }
+    .startButton{
+        padding: 5px;
+        color: white;
+        background-color: crimson;
+        border: 1px solid crimson;
+        flex: 1;
+    }
+
+    /* Questions */
+    fieldset{
+        border: none;
+    }
+    .questionAnswerForm{
+        margin: 0 30px 0 30px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 5vw;
+    }
+    .questionAnswerForm >legend{
+        flex: 1;
+        margin: auto;
+        padding: 5px;
+    }
+    .questionChoices{
+        display: flex;
+        flex-direction: column;
+    }
+    .answerOption{
+        display: flex;
+        background-color: crimson;
+        padding-left: 15px;
+    }
+    .answerOption >span{
+        margin: auto; 
+    }
+    label{
+        font-weight: bold;
+        font-size: 5vw;
+        margin: 3px;
+        padding: 10px;
+        background-color: crimson;
+        border-radius: 5px;
+        flex: 4;
+    }
+    label:hover {
+        color: white;
+    }
+
+    /* Pictures */
+    img{
+        max-width: 70%;
+        border-radius: 50%;
+        margin: auto;
+    }
+
+    /* Buttons */
+    .submit, .next{
+        display: flex;
+    }
+    button{
+        margin: 10px 5px 10px 5px;
+        font-weight: bold;
+        flex: 1;
+        padding: 5px;
+        color: white;
+        background-color: royalblue;
+        font-size: 5vw;
+        border-radius: 5px;
+    }
+    button span{
+        /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px  0 rgba(0,0,0,0.19); */
+        position: relative;
+    }
+    button span:after{
+        content: '\00bb';
+        font-size: 3vw;
+        position: relative;
+        opacity: 0;
+        /* top: 0; */
+        right: -5px;
+        transition: 0.5s;
+    }
+    button:hover span{
+        padding-right: 35px;
+    }
+    button:hover span:after{
+        opacity: 1;
+        /* right: 0; */
+    }
+
+
+
+    /* Feedback Messages */
+    .rightAnswer, .wrongAnswer{
+        display: flex;
+        /* border: 1px solid black; */
+        flex-direction: column;
+        margin: 30px 30px 50px 30px;
+    }
+    .rightAnswer >p {
+        text-align: center;
+        font-size: 5vw;
+        margin: auto;
+    }
+    .wrongAnswer >p{
+        text-align: center;
+        font-size: 5vw;
+        margin: auto;
+    }
+    .winner, .loser{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .winner >p, .loser >p{
+        text-align: center;
+        font-size: 5vw;
+        margin: auto;
+    }
+
+    /* Restart Quiz */
+    .restart{
+        flex: 1;
+        margin: auto;
+        font-size: 5vw;
+        margin-top: 10px;
+        padding: 5px;
+    }
+
+
+
+@media only screen and (min-width: 768px) {
+    
+    /* Header */
+    header{
+        display: flex;
+        margin: 50px;
+        padding: 5px;
+        align-items: center;
+    }
+    .logo{
+        flex: 1;
+        padding: 10px;
+    }
+    .logo >img{
+        border-radius: 50%;
+    }
+    .container{
+        display: flex;
+        list-style-type: none;
+        flex: 2;
+        padding: 10px;
+        justify-content: space-around;
+    }
+    .container >li{
+        flex: 1;
+        font-size: 2vw;
+    }
+
+
+    /* Main Section */
+    body{
+        max-width: 800px;
+        margin: auto;
+        background-color: lightgray;
+    }
+    /* Start Screen */
+    .quizStart{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        background-color: royalblue;
+        margin: 5px 30px 5px 30px;
+    }
+    .quizStart >h1{
+        font-size: 4vw;
+        flex: 1;
+    }
+    .startButton{
+        padding: 5px;
+        color: white;
+        background-color: crimson;
+        border: 1px solid crimson;
+        flex: 1;
+    }
+
+    /* Questions */
+    fieldset{
+        border: none;
+    }
+    .questionAnswerForm{
+        margin: 0 30px 0 30px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 2vw;
+    }
+    .questionAnswerForm >legend{
+        flex: 1;
+        margin: auto;
+        padding: 5px;
+    }
+    .questionChoices{
+        display: flex;
+        flex-direction: column;
+    }
+    .answerOption{
+        display: flex;
+        background-color: crimson;
+        padding-left: 15px;
+    }
+    .answerOption >span{
+        margin: auto; 
+    }
+    label{
+        font-weight: bold;
+        font-size: 2vw;
+        margin: 3px;
+        padding: 10px;
+        background-color: crimson;
+        border-radius: 5px;
+        flex: 4;
+    }
+    label:hover {
+        color: white;
+    }
+
+    /* Pictures */
+    img{
+        max-width: 40%;
+        border-radius: 50%;
+        margin: auto;
+    }
+
+    /* Buttons */
+    .submit, .next{
+        display: flex;
+    }
+    button{
+        margin: 10px 5px 10px 5px;
+        font-weight: bold;
+        flex: 1;
+        padding: 5px;
+        color: white;
+        background-color: royalblue;
+        font-size: 2vw;
+        border-radius: 5px;
+    }
+    button span{
+        /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px  0 rgba(0,0,0,0.19); */
+        position: relative;
+    }
+    button span:after{
+        content: '\00bb';
+        font-size: 3vw;
+        position: relative;
+        opacity: 0;
+        /* top: 0; */
+        right: -5px;
+        transition: 0.5s;
+    }
+    button:hover span{
+        padding-right: 35px;
+    }
+    button:hover span:after{
+        opacity: 1;
+        /* right: 0; */
+    }
+
+
+
+    /* Feedback Messages */
+    .rightAnswer, .wrongAnswer{
+        display: flex;
+        /* border: 1px solid black; */
+        flex-direction: column;
+        margin: 30px 30px 50px 30px;
+    }
+    .rightAnswer >p {
+        text-align: center;
+        font-size: 3vw;
+        margin: auto;
+    }
+    .wrongAnswer >p{
+        text-align: center;
+        font-size: 3vw;
+        margin: auto;
+    }
+    .winner, .loser{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .winner >p, .loser >p{
+        text-align: center;
+        font-size: 4vw;
+        margin: auto;
+    }
+
+    /* Restart Quiz */
+    .restart{
+        flex: 1;
+        margin: auto;
+        font-size: 2vw;
+        margin-top: 10px;
+        padding: 5px;
+    }
 }

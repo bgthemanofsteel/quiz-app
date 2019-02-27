@@ -3,7 +3,6 @@ let score = 0;
 
 
 function startScreen(){
-    //when page loads show quizStart
     $('.quizStart').show();
     $('.questionAnswerForm').hide();
     $('.rightAnswer').hide();
@@ -15,8 +14,6 @@ function startScreen(){
 
 
 function renderQuestionAnswerForm(){
-    //console.log('render question form works');
-    //return questionString of `html`
     if(questionNumber < STORE.length){
         return `<div class="question-${questionNumber}">
         <legend><h2>${STORE[questionNumber].question}</h2></legend>
@@ -62,11 +59,7 @@ function renderQuestionAnswerForm(){
 
 
 function handleQuizStart(){
-    // console.log('handle quiz start');
     $('.quizStart').on('click', '.startButton', function(){
-        // console.log('start clicked');
-        // console.log(questionNumber);
-        //questionNumber++;
         handleQuestionCount(); 
         $('.quizStart').hide();
         $('.questionAnswerForm').show().html(renderQuestionAnswerForm());
@@ -108,9 +101,7 @@ function handleUserSelection(){
 
 function correct(){
     changeScore();
-    // console.log(score);
     $('.questionAnswerForm').hide();
-    // $('.quizStart').hide();
     $('.rightAnswer').html(
         `<p>YOU GOT IT!</p>
         <img src="${STORE[questionNumber].image}" alt="${STORE[questionNumber].alt}">
@@ -121,7 +112,6 @@ function correct(){
 
 function wrong(){
     $('.questionAnswerForm').toggle();
-    // $('.quizStart').hide();
     $('.wrongAnswer').html(
         `<p><b>NOT QUITE.</b><br>The correct answer is <span>${STORE[questionNumber].correctAnswer}</span></p>
         <img src="${STORE[questionNumber].image}" alt="${STORE[questionNumber].alt}">
@@ -157,7 +147,6 @@ function renderNextQuestion(){
 
 
 function handleEndMessage(){
-    // console.log('end message works');
     if(score >= 8) {
         $('.winner').html(
             ` <p>GREAT JOB!</p>
@@ -189,12 +178,16 @@ function beginQuiz(){
 function restartQuiz(){
     $('.winner').on('click', '.restart', function(){
         questionNumber = 0;
+        $('.questionNumber').text(0);
         score = 0;
+        handleScoreCount();
         startScreen();
     });
     $('.loser').on('click', '.restart', function(){
         questionNumber = 0;
+        $('.questionNumber').text(0);
         score = 0;
+        handleScoreCount();
         startScreen();
     });
 }
