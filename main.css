@@ -409,7 +409,7 @@
     .answerOption{
         display: flex;
         background-color: crimson;
-        padding-left: 15px;
+        padding: 15px;
     }
     .answerOption >span{
         margin: auto; 
@@ -418,14 +418,23 @@
         font-weight: bold;
         font-size: 2vw;
         margin: 3px;
-        padding: 10px;
+        /* padding: 10px; */
         background-color: crimson;
         border-radius: 5px;
         flex: 4;
     }
     label:hover {
         color: white;
+        cursor: pointer;
     }
+    /* label:checked{
+        color:white;
+      } */
+
+    label >input[type="radio"] {
+        margin-top: -1px;
+        vertical-align: middle;
+      }
 
     /* Pictures */
     img{
@@ -461,6 +470,7 @@
     }
     button:hover span{
         padding-right: 35px;
+        cursor: pointer;
     }
     button:hover span:after{
         opacity: 1;

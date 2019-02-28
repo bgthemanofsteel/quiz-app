@@ -16,27 +16,28 @@ function startScreen(){
 function renderQuestionAnswerForm(){
     if(questionNumber < STORE.length){
         return `<div class="question-${questionNumber}">
-        <legend><h2>${STORE[questionNumber].question}</h2></legend>
-        <fieldset>
-            <form>
+        
+        <form>
+            <legend><h2>${STORE[questionNumber].question}</h2></legend>
+            <fieldset>
             <div class = "questionChoices">
                 <label class="answerOption">
-                <input type="radio" value="${STORE[questionNumber].choices[0]}" name="answer" required>
+                <input type="radio" value="${STORE[questionNumber].choices[0]}" name="answer" required="required" checked="checked">
                 <span>${STORE[questionNumber].choices[0]}</span>
                 </label>
 
                 <label class="answerOption">
-                <input type="radio" value="${STORE[questionNumber].choices[1]}" name="answer" required>
+                <input type="radio" value="${STORE[questionNumber].choices[1]}" name="answer" required="required">
                 <span>${STORE[questionNumber].choices[1]}</span>
                 </label>
 
                 <label class="answerOption">
-                <input type="radio" value="${STORE[questionNumber].choices[2]}" name="answer" required>
+                <input type="radio" value="${STORE[questionNumber].choices[2]}" name="answer" required="required">
                 <span>${STORE[questionNumber].choices[2]}</span>
                 </label>
 
                 <label class="answerOption">
-                <input type="radio" value="${STORE[questionNumber].choices[3]}" name="answer" required>
+                <input type="radio" value="${STORE[questionNumber].choices[3]}" name="answer" required="required">
                 <span>${STORE[questionNumber].choices[3]}</span>
                 </label>
                 <div class="submit">
@@ -44,9 +45,9 @@ function renderQuestionAnswerForm(){
                 </div>
             </div>
             
-            </form>
+            </fieldset>
             
-        </fieldset>
+        </form>
         </div>`;
     } else {
         handleEndMessage();
